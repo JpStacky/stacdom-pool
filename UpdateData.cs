@@ -13,7 +13,7 @@ namespace ADONet
                 con.Open();
                 int sal = 3000;
                 string name = "TERISA";
-                string query = "UPDATE EMPLOYEE_PAYROLL SET SALARY = "+sal+" WHERE NAME = "+name;
+                string query = "UPDATE EMPLOYEE_PAYROLL SET SALARY = "+sal+" WHERE NAME = '"+name+"'";
                 SqlCommand cmd = new SqlCommand(query, con);
                cmd.ExecuteNonQuery();
             }
